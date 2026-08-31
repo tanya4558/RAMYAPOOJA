@@ -1,0 +1,103 @@
+.rp-shop-hero {
+  text-align: center;
+  padding: 66px 0 50px;
+  background:
+    radial-gradient(700px 300px at 50% 0%, var(--blush), transparent 70%),
+    var(--cream);
+}
+
+.rp-shop-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  margin: 14px 0 10px;
+}
+
+.rp-shop-hero p {
+  font-family: var(--antique);
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.rp-shop-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 26px 0 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.rp-chips {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--espresso);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 10px 20px;
+  border-radius: 40px;
+  transition: all 0.25s var(--ease);
+}
+
+.chip:hover {
+  border-color: var(--gold);
+}
+
+.chip.on {
+  background: linear-gradient(135deg, var(--plum), var(--wine));
+  color: #fff;
+  border-color: transparent;
+}
+
+.rp-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--wine);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 9px 16px;
+  border-radius: 40px;
+}
+
+.rp-sort select {
+  border: none;
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--espresso);
+  outline: none;
+  cursor: pointer;
+}
+
+.rp-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 22px 0 26px;
+}
+
+.rp-count strong {
+  color: var(--plum);
+}
+
+.rp-shop-grid {
+  padding-bottom: 90px;
+}
+
+@media (max-width: 640px) {
+  .rp-shop-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .rp-sort {
+    justify-content: center;
+  }
+}

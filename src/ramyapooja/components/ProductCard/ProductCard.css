@@ -1,0 +1,205 @@
+.rp-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+}
+
+.rp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold-soft);
+}
+
+/* Media / image */
+.rp-card-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.rp-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.6s var(--ease);
+}
+
+.rp-card:hover .rp-card-img {
+  transform: scale(1.06);
+}
+
+.rp-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.badge-wine {
+  background: var(--wine);
+}
+.badge-plum {
+  background: var(--plum);
+}
+.badge-gold {
+  background: linear-gradient(135deg, var(--gold), #a97f2e);
+  color: var(--espresso);
+}
+
+.rp-off {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--espresso);
+  background: var(--cream);
+  border: 1px solid var(--gold-soft);
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.rp-heart {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 253, 249, 0.92);
+  color: var(--wine);
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s var(--ease), background 0.25s var(--ease),
+    color 0.25s var(--ease);
+}
+
+.rp-heart:hover {
+  transform: scale(1.12);
+}
+
+.rp-heart.on {
+  background: var(--wine);
+  color: #fff;
+}
+
+/* Body */
+.rp-card-body {
+  padding: 20px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rp-card-cat {
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.rp-card-body h3 {
+  font-size: 1.22rem;
+  margin: 8px 0 10px;
+}
+
+.rp-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.rp-stars {
+  display: inline-flex;
+  gap: 2px;
+  color: var(--gold);
+  font-size: 0.82rem;
+}
+
+.rp-card-desc {
+  font-family: var(--antique);
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.rp-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.rp-sizes span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--espresso);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 4px 9px;
+  background: var(--cream);
+}
+
+.rp-card-foot {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+}
+
+.rp-price .now {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--plum);
+}
+
+.rp-price .was {
+  margin-left: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.rp-enquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, var(--plum), var(--wine));
+  padding: 10px 16px;
+  border-radius: 40px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.rp-enquire:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(109, 33, 60, 0.32);
+}
