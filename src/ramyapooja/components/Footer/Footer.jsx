@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FaWhatsapp,
-  FaInstagram,
-  FaFacebookF,
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaTrademark,
+  FaWhatsapp,
 } from 'react-icons/fa';
 import { WHATSAPP } from '../../data/products';
 import './Footer.css';
@@ -32,12 +30,6 @@ const Footer = () => (
             aria-label="WhatsApp"
           >
             <FaWhatsapp />
-          </a>
-          <a href="#" aria-label="Instagram">
-            <FaInstagram />
-          </a>
-          <a href="#" aria-label="Facebook">
-            <FaFacebookF />
           </a>
         </div>
       </div>

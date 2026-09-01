@@ -285,24 +285,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ===== NEWSLETTER ===== */}
-      <section className="rp-news">
-        <div className="ramya-container rp-news-inner">
-          <div>
-            <span className="eyebrow">Join the RAMYAPOOJA family</span>
-            <h2>New nightwear drops &amp; early offers, first.</h2>
-          </div>
-          <form
-            className="rp-news-form"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <input type="email" placeholder="Your email address" aria-label="Email" required />
-            <button type="submit" className="btn btn-gold">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </section>
     </div>
   );
 };

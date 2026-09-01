@@ -18,6 +18,8 @@
 
 /* Nav bar */
 .rp-nav {
+  position: relative;
+  z-index: 70;
   background: rgba(250, 244, 236, 0.82);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -44,6 +46,7 @@
   align-items: center;
   gap: 12px;
   margin-right: auto;
+  min-width: 0;
 }
 
 .rp-logo-mark {
@@ -125,6 +128,7 @@
   align-items: center;
   gap: 14px;
   margin-left: 20px;
+  flex-shrink: 0;
 }
 
 .rp-wish {
@@ -209,12 +213,29 @@
 @media (max-width: 760px) {
   .rp-burger {
     display: block;
+    flex-shrink: 0;
+  }
+  .rp-nav-inner {
+    gap: 10px;
   }
   .rp-logo {
     margin: 0 auto;
   }
+  .rp-logo-mark {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+  .rp-logo-text {
+    font-size: 1.05rem;
+    letter-spacing: 0.08em;
+  }
+  .rp-logo-text small {
+    display: none;
+  }
   .rp-actions {
     margin-left: 0;
+    gap: 10px;
   }
   .rp-menu {
     position: fixed;
