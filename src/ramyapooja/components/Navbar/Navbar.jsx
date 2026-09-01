@@ -43,7 +43,7 @@ const Navbar = () => {
             <span className="rp-logo-mark">R</span>
             <span className="rp-logo-text">
               RAMYAPOOJA
-              <small>clothing · footwear · headwear</small>
+              <small>clothing</small>
             </span>
           </Link>
 
